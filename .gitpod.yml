@@ -1,0 +1,10 @@
+tasks:
+  - init: |-
+      pyenv install 3.10.5 && pyenv global 3.10.5
+      pip install -U atomkraft
+      sudo install-packages opam
+      opam init -y
+      opam install mdx -y
+      (mkdir -p samples && cd samples && curl -OL \
+        https://raw.githubusercontent.com/informalsystems/atomkraft/rano/77-token-transfer-example/examples/cosmos-sdk/transfer/transfer.md)
+      eval $(opam env)
