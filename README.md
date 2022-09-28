@@ -12,13 +12,3 @@ cd my_project
 ```
 
 This will initialize a Poetry project with a boilerplate. Now you can continue to add your code to complete the project.
-
-But if you want to kick-start a sample token-transfer project, you may execute,
-
-```
-poetry run bash ../samples/transfer.sh
-```
-
-This will complete the project with a model, ten traces, and a complete reactor.
-
-You may want to look inside `samples/transfer.sh` to understand the necessary parts to complete a project.
